@@ -50,3 +50,20 @@ let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticate
 
 console.log("Authentication Status:", authenticationStatus);
 
+userType = "enrolled_member";
+
+switch (userType) {
+    case "employee":
+        userMessage = "Dietary Services available.";
+        break;
+    case "enrolled_member":
+        userMessage = "Dietary Services and one-on-one interaction with a dietician available.";
+        break;
+    case "subscriber":
+        userMessage = "Partial access to Dietary Services.";
+        break;
+    default:
+        userMessage = "Please subscribe or enroll to the Dietary Services.";
+}
+
+console.log("User Message:", userMessage);
