@@ -9,3 +9,11 @@ function calculateArea() {
  document.getElementById('result').innerText = `The area of the rectangle is: ${area}`;
 }
 
+function calculateAmount() {
+ g1 = parseFloat(document.getElementById('grocery1').value);
+ g2 = parseFloat(document.getElementById('grocery2').value);
+ g3 = parseFloat(document.getElementById('grocery3').value);
+
+ let amountresult = g1 + g2 + g3;
+ document.getElementById('amountresult').innerText = `The total amount is:$ ${amountresult}`;
+}
