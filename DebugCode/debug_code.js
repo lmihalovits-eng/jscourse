@@ -7,7 +7,7 @@ function performOperation() {
 	if (!isNaN(num1) && !isNaN(num2)) {
 	// Perform the operation
 					let result = multiply(num1, num2);
-
+                    result = divide(result);
 					// Display the result
 					displayResult(result);
 				} else {
@@ -15,7 +15,7 @@ function performOperation() {
 				}
 			}
 
-			function multiply(a, b) {
+function multiply(a, b) {
 				// Introduce a debugger statement to pause execution
 				debugger;
 
@@ -23,7 +23,13 @@ function performOperation() {
 				return a * b;
 			}
 
-			function displayResult(result) {
+function divide(a) {
+                debugger;
+				// Divide by 2
+				return a / 2;
+			}
+
+function displayResult(result) {
 				// Display the result in the paragraph element
 				const resultElement = document.getElementById('result');
 				resultElement.textContent = `The result is: ${result}`;
