@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel recommendation</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+<nav>
+    <div class="company-logo">
+    <img src="plane.png" width="30">
+    <h1 style="margin-bottom: 0px; color: #ffffff;">TravelBloom</h1>
+    </div>
+<ul>
+  <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+  <li><a href="./about_us.html" id="contact">About Us </a></li>
+  <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+  <li>
+    <div class="search-box">
+      <ul>
+      <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword"></li>      
+      <li><img src="magnifying_glass.png" alt="Search" width="20"></li>  
+      <li><button id='btnSearch'>Search</button></li>
+      <li><button id='btnClear'>Clear</button></li>
+      </ul>
+    </div>
+  </li>
+
+</ul>
+</nav>
+
+<div class="social-bar">
+    <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="plane.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com/yourpage" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="plane.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/yourpage" target="_blank" rel="noopener" aria-label="X">
+      <img src="plane.png" alt="X">
+    </a>
+    <a href="https://youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube">
+      <img src="plane.png" alt="YouTube">
+    </a>
+  </div>
+<div class="social-bar">
+    <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="images/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com/yourpage" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="images/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/yourpage" target="_blank" rel="noopener" aria-label="X">
+      <img src="images/x.png" alt="X">
+    </a>
+    <a href="https://youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube">
+      <img src="images/youtube.png" alt="YouTube">
+    </a>
+  </div>
+
+<div class="container">
+<div class="introduction">
+<h1 style="font-size: 40px;">EXPLORE DREAM DESTINATION</h1>
+<p1>The Travel Recommentaion App helps users explore popular travel destinations
+    through an interactive and user frined interface. It allow users to search for 
+    beaches, temples, countries, or specific country names to view related cities along
+    with images and descriptions. The app dynamically fetches data from a structures
+    JSON file to display relevant results. It provides a simple and efficient way to
+    discover and plan travel destinations.</p1>
+<br>
+<br>
+<button id='btnBookNow' style="background-color: #1f643a; border-radius: 2px">Book Now</button>
+</div>
+</div>
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>

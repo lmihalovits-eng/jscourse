@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel recommendation</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+   <nav>
+    <div class="company-logo">
+    <img src="plane.png" width="30">
+    <h1 style="margin-bottom: 0px; color: #ffffff;">TravelBloom</h1>
+    </div>
+<ul>
+  <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+  <li><a href="./about_us.html" id="contact">About Us </a></li>
+  <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+  <li>
+  </li>
+
+</ul>
+</nav>
+
+<div class="social-bar">
+    <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="plane.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com/yourpage" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="plane.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/yourpage" target="_blank" rel="noopener" aria-label="X">
+      <img src="plane.png" alt="X">
+    </a>
+    <a href="https://youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube">
+      <img src="plane.png" alt="YouTube">
+    </a>
+  </div>
+
+<div class="container3">
+<div class="contact_us">
+<h1 style="font-size: 40px;">CONTACT US</h1>
+<p1>Get in touch</p1>
+</div>
+<div class="contact_us">
+  <form id="contactForm">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+    </div>
+    <button type="submit" onclick="thankyou()">Submit</button>
+  </form>
+</div>
+</div>
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>

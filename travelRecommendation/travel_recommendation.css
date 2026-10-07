@@ -1,0 +1,269 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #1f1c1c;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Basic CSS for the form elements */
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Basic CSS for the report section */
+  h2 {
+    margin-top: 5px;
+    font-size: 30px;
+  }
+  
+  h3 {
+    margin-top: 30px;
+  }
+
+  p1 {
+    margin: 5px;
+  }
+
+  p2 {
+    padding: 7px 15px;
+    margin-top: 5px;
+    background-color: #6326c4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #report,#result {
+    padding: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+  }
+#result{
+  height: 00px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+  #result img{
+    width: 200px;
+    height: 100px;
+  }
+
+  .search-box {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 5px;
+  }
+  
+  .search-box input {
+    border: none;
+    outline: none;       /* removes the default focus outline */
+    background: transparent;
+    font-size: 16px;
+    width: 250px;
+  }
+  
+  .search-box img {
+    align-items: center;
+    vertical-align: middle;
+  }
+  
+  /* optional: highlight the whole box when the input is focused */
+  .search-box:focus-within {
+    border-color: #4ae284;
+  }
+
+  .container {
+    position: fixed;
+    top: 20%;
+    right: 8%;
+    left: 8%;
+    max-width: 590px;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 16px 24px;                          
+    border-radius: 12px;
+    color: #ffffff;
+  }
+
+  .container2 {
+    position: fixed;
+    top: 20%;
+    right: 8%;
+    left: 8%;
+    max-width: 80%;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 16px 24px;                          
+    border-radius: 12px;
+    color: #ffffff;
+  }
+
+  .container3 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 20%;
+    right: 8%;
+    left: 8%;
+    max-width: 80%;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 16px 24px;                          
+    border-radius: 12px;
+    color: #ffffff;
+  }
+
+  .company-logo {
+    display: flex;
+    align-items: center;   /* vertically centers the image against the text */
+    gap: 12px;             /* space between image and heading */
+  }
+  
+  .company-logo h1 {
+    margin: 0;             /* removes the default h1 margins that throw off the alignment */
+  }
+
+  .social-bar {
+    position: fixed;          
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;   /
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 12px 12px 0;   /* rounds only the right-hand corners */
+  }
+  
+  .social-bar a {
+    display: block;
+  }
+  
+  .social-bar img {
+    display: block;           /* removes the small gap under inline images */
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+  }
+  
+  .social-bar img:hover {
+    transform: scale(1.15);   /* small hover effect */
+  }
+
+  .about_us ul {
+    display: flex;
+    justify-content: space-between;          /* centered row */
+    /* justify-content: space-between;   spread to both edges */
+  }
+  
+  .about_us ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .contact_us form > div {
+    margin-bottom: 16px;
+  }
+  
+  .contact_us label {
+    display: block;            /* puts the label on its own line above the field */
+    color: white;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .contact_us input,
+  .contact_us textarea {
+    display: block;            /* field on its own line */
+    width: 500px;
+    box-sizing: border-box;    /* padding and border stay inside the 100% width */
+    padding: 10px 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    color: white;              /* color of the text the user types */
+    font-size: 16px;
+    font-family: inherit;
+  }
+  
+  .contact_us input::placeholder,
+  .contact_us textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);   /* placeholder text, lighter than typed text */
+  }
+  
+  .contact_us input:focus,
+  .contact_us textarea:focus {
+    outline: none;
+    border-color: #4a90e2;             /* highlight when the field is active */
+  }
