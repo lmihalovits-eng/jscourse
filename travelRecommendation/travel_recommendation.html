@@ -6,28 +6,25 @@
   <link rel="stylesheet" href="./travel_recommendation.css">
 </head>
 <body>
-<nav>
-    <div class="company-logo">
-    <img src="plane.png" width="30">
-    <h1 style="margin-bottom: 0px; color: #ffffff;">TravelBloom</h1>
-    </div>
-<ul>
-  <li><a href="./travel_recommendation.html" id="home">Home </a></li>
-  <li><a href="./about_us.html" id="contact">About Us </a></li>
-  <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
-  <li>
-    <div class="search-box">
-      <ul>
-      <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword"></li>      
-      <li><img src="magnifying_glass.png" alt="Search" width="20"></li>  
-      <li><button id='btnSearch'>Search</button></li>
-      <li><button id='btnClear'>Clear</button></li>
-      </ul>
-    </div>
-  </li>
-
-</ul>
-</nav>
+    <nav>
+        <div class="company-logo">
+          <img src="plane.png" alt="Logo" width="30">
+          <h1 style="margin-bottom: 0px; color: #ffffff;">TravelBloom</h1>
+        </div>
+      
+        <ul class="menu">
+          <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+          <li><a href="./about_us.html" id="about">About Us</a></li>
+          <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
+        </ul>
+      
+        <div class="search-box">
+          <input type="text" id="keywordInput" placeholder="Enter a destination or keyword">
+          <img src="magnifying_glass.png" alt="Search" width="20">
+          <button id="btnSearch">Search</button>
+          <button id="btnClear">Clear</button>
+        </div>
+      </nav>
 
 <div class="social-bar">
     <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" aria-label="Facebook">
@@ -57,6 +54,9 @@
 <br>
 <button id='btnBookNow' style="background-color: #1f643a; border-radius: 2px">Book Now</button>
 </div>
+</div>
+<div class="searchKeyword">
+    <div id="result"></div>
 </div>
 <script src="./travel_recommendation.js"></script>
 </body>
